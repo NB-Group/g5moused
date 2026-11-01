@@ -1,0 +1,11 @@
+[Unit]
+Description=EWEADN G5 userspace mouse driver (vendor report relay)
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/local/bin/g5moused
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
